@@ -341,17 +341,17 @@ section.portfolio>nav .bar-inner {
 
 section.portfolio>nav .bar.state-1 .bar-inner {
     margin-left: 0;
-    width: 41px;
+    width: 33px;
 }
 
 section.portfolio>nav .bar.state-2 .bar-inner {
-    margin-left: 80px;
-    width: 42px;
+    margin-left: 72px;
+    width: 33px;
 }
 
 section.portfolio>nav .bar.state-3 .bar-inner {
-    margin-left: 160px;
-    width: 108px;
+    margin-left: 143px;
+    width: 92px;
 }
 
 section.portfolio .works {
