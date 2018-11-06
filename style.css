@@ -39,12 +39,41 @@ h6 {
     clear: both;
 }
 
+#siteAbout {
+    animation: siteAboutUpSlide 1s;
+}
+
+
+@keyframes siteAboutUpSlide {
+    0% {
+        transform: translateY(100px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+[data-x].offset {
+    transform: translateY(200px);
+}
+
+[data-x] {
+    transform: translateY(0);
+    transition: all .5s;
+}
+
 .topNavBar {
     padding: 20px 0 20px 0;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    transition: all 0.5s; color: #b7b7b7;
+}
+
+.topNavBar.sticky{background: white;padding: 10px 0; z-index: 1;
+    box-shadow: 0 0 15px rgba(0,0,0,0.25);color: #3d4451;
 }
 
 .topNavBar-inner {
@@ -52,7 +81,7 @@ h6 {
 }
 
 .topNavBar nav {
-    padding-top: 7px;
+    padding-top: 5px;
 }
 
 .topNavBar nav>ul {
@@ -65,21 +94,75 @@ h6 {
     float: left;
     margin-left: 17px;
     margin-right: 17px;
+    position: relative;
 }
 
 .topNavBar nav>ul>li>a {
     font-size: 12px;
-    color: #b7b7b7;
+    color: inherit;
     font-weight: bold;
     border-top: 3px solid transparent;
     border-bottom: 3px solid transparent;
     padding-top: 5px;
     padding-bottom: 5px;
     display: block;
+    position: relative;
 }
 
-.topNavBar nav>ul>li>a:hover {
-    border-bottom: 3px solid #e06567;
+.topNavBar nav>ul>li.active>a::after,
+.topNavBar nav>ul>li.highLight>a::after {
+    content: '';
+    display: inline-block;
+    height: 3px;
+    position: absolute;
+
+    /*bottom: 0;*/
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #e06567;
+    animation: bottomBarSlide .3s;
+
+}
+
+@keyframes bottomBarSlide {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+
+}
+
+.topNavBar .subMenu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: white;
+    color: #3d4451;
+
+}
+.topNavBar li.active .subMenu{  /*当li被鼠标进入时，subMenu出现*/
+    display: block;
+    animation: subMenuSlide .3s;
+    cursor: pointer;
+
+
+}
+@keyframes subMenuSlide {
+    0% {
+        margin-left: 100%;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+.topNavBar .subMenu > li {
+    white-space: nowrap;  /*让li里面的内容别换行，别缩到一起*/
+    padding: 5px 10px;
+
 }
 
 .topNavBar .logo {
@@ -107,7 +190,7 @@ h6 {
 
 .banner .mask {
     height: 515px;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(70, 74, 83, 0.8);
 }
 
 .userCard {
@@ -151,7 +234,7 @@ h6 {
 
 .userCard .text h1 {
     margin-top: 18px;
-    margin-bottom: 12px;
+    margin-bottom: 18px;
 }
 
 .userCard .text hr {
@@ -284,6 +367,7 @@ section.skills .progressBar {
     background: #FAE1E1;
     border-radius: 2px;
     margin: 4px 0 40px;
+    overflow: hidden;
 }
 
 section.skills .progressBar>.progress {
@@ -291,21 +375,26 @@ section.skills .progressBar>.progress {
     background: #E6686A;
     width: 70%;
     border-radius: 2px;
+    transform: translateX(0);
+    transition: all 4s;
 }
+
+section.skills.offset .progress {
+    transform: translateX(-100%);
+}
+
 
 section.portfolio {
     text-align: center;
     margin-bottom: 100px;
 }
 
-section.portfolio>nav {
-    text-align: center;
-}
 
 section.portfolio>nav>ol {
     margin: 0 auto;
     display: inline-block;
     vertical-align: top;
+    width: inherit;
 }
 
 section.portfolio>nav>ol>li {
@@ -322,9 +411,15 @@ section.portfolio>nav {
     display: inline-block;
     vertical-align: top;
     margin-top: 32px;
+    width: 235px;
+    height: 59px;
+    text-align: center;
+
+
 }
 
 section.portfolio>nav .bar {
+    width: inherit;
     height: 5px;
     background: white;
     margin-top: 5px;
@@ -337,6 +432,9 @@ section.portfolio>nav .bar-inner {
     background: #E6686A;
     border-radius: 2px;
     transition: all 0.3s;
+}
+section.portfolio li {
+    font-size: 16px; /*不同字体，不同浏览器的字体大小不一样，用字体大小撑盒子时要注意*/
 }
 
 section.portfolio>nav .bar.state-1 .bar-inner {
