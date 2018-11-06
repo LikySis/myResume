@@ -39,8 +39,8 @@ h6 {
     clear: both;
 }
 
-#siteAbout {
-    animation: siteAboutUpSlide 1s;
+#siteAbout.onLoad {
+    animation: siteAboutUpSlide 1.2s;
 }
 
 

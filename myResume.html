@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <title>Liky的个人简历</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="//at.alicdn.com/t/font_451045_32zbfqegtq3t0529.js"></script>
     <style type="text/css">
         .icon {
             width: 1em;
@@ -123,14 +122,17 @@
         </nav>
     </div>
 </div>
+
 <div class="banner">
     <div class="mask"></div>
 </div>
+
 <main>
     <div data-x id="siteAbout" class="userCard">
         <div class="pictureAndText clearfix">
-            <div class="picture">
-                <img src="./images/avatar.jpg" width="299" height="347" alt="头像">
+            <div class="picture" style="background-image:url('./images/avatar.png');background-position: center center;background-size: cover; width:299px; height:347px;">
+                <!--将背景当做头像-->
+                <!--<img src="./images/avatar.png" width="299" height="347" alt="头像">-->
             </div>
             <div class="text">
         <span class="welcome">Hello
@@ -275,6 +277,8 @@
 
 </section>
 
+<script src="//at.alicdn.com/t/font_451045_32zbfqegtq3t0529.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.1.1/Tween.min.js"></script>
 <!--加载tween函数库，实现缓动动画-->
 <!--记住cdnjs，可以用http协议调用github上的函数库-->
@@ -287,6 +291,10 @@
     }, 1200);  // 页面加载完毕后，显示loading动画 ，1.5s后显示页面
 
 
+    setTimeout(function () {
+        siteAbout.classList.add('onLoad');
+    }, 1280);  // 显示页面后再加载siteAbout上升动画
+
 
     let specialTags = document.querySelectorAll('[data-x]');
     for (let i = 1; i < specialTags.length; i++) {
@@ -297,13 +305,12 @@
     function asd() {
         let specialTags = document.querySelectorAll('[data-x]');
         for (let i = 1; i < specialTags.length; i++) {
-            if(specialTags[i].offsetTop - window.scrollY < 700){
+            if (specialTags[i].offsetTop - window.scrollY < 700) {
                 specialTags[i].classList.remove('offset');
             }
         }
 
     }  // 符合条件时上来
-
 
 
     findClosest();  //先给第一个li标签加高亮
@@ -339,7 +346,6 @@
         }
         li.classList.add('highLight');
     }
-
 
 
     // 在鼠标进入和离开时显示二级菜单，关闭二级菜单
