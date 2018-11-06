@@ -130,7 +130,8 @@
 <main>
     <div data-x id="siteAbout" class="userCard">
         <div class="pictureAndText clearfix">
-            <div class="picture" style="background-image:url('./images/avatar.png');background-position: center center;background-size: cover; width:299px; height:347px;">
+            <div class="picture"
+                 style="background-image:url('./images/avatar.png');background-position: center center;background-size: cover; width:299px; height:347px;">
                 <!--将背景当做头像-->
                 <!--<img src="./images/avatar.png" width="299" height="347" alt="头像">-->
             </div>
@@ -291,9 +292,11 @@
     }, 1200);  // 页面加载完毕后，显示loading动画 ，1.5s后显示页面
 
 
-    setTimeout(function () {
-        siteAbout.classList.add('onLoad');
-    }, 1280);  // 显示页面后再加载siteAbout上升动画
+    if (window.scrollY === 0) {
+        setTimeout(function () {
+            siteAbout.classList.add('onLoad');
+        }, 1280);  // 显示页面后再加载siteAbout上升动画
+    }
 
 
     let specialTags = document.querySelectorAll('[data-x]');
