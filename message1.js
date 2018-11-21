@@ -39,7 +39,27 @@ Form.addEventListener('submit', function (e) {
   
 })
 
+// -------------------------------------------------------------------
 
+// MVC 就是一种组织代码的形式，按功能划分代码；
+// 将V 和 M传给C（controller），C负责初始化M，对V进行一系列的操作，
+// M（model）负责一切与数据有关的操作，V（view） 就是C要操控的页面。
+
+/*比如用户点击事件，
+view通知controller ， controller监听,更新view；
+controller调用model，model返回数据给controller；
+model请求server端，server端发送响应到model；*/
+
+// -------------------------------------------------------------------
+
+// !function(){
+//   var model = {
+//     // 获取数据
+//     init: function(){
+//       var APP_ID = 'TsDnap9SEXjSvGSowP7gXXJC-gzGzoHsz'
+//       var APP_KEY = 'rGye31p12mM3wFpNRn9RADu9'
+//       AV.init({ appId: APP_ID, appKey: APP_KEY })
+//     },
 //     fetch: function(){
 //       var query = new AV.Query('Message');
 //       return query.find() // Promise 对象
@@ -54,7 +74,6 @@ Form.addEventListener('submit', function (e) {
 //       })
 //     }
 //   }
-//
 //
 //   var view = document.querySelector('section.message')
 //
@@ -93,14 +112,14 @@ Form.addEventListener('submit', function (e) {
 //     },
 //     saveMessage: function(){
 //       let myForm = this.form
-//       let content = myForm.querySelector('textarea[name=textArea]').value
+//       let content = myForm.querySelector('input[name=content]').value
 //       let name = myForm.querySelector('input[name=name]').value
 //       this.model.save(name, content).then(function(object) {
 //         let li = document.createElement('li')
 //         li.innerText = `${object.attributes.name}: ${object.attributes.content}`
 //         let messageList = document.querySelector('#messageList')
 //         messageList.appendChild(li)
-//         myForm.querySelector('textarea[name=textArea]').value = ''
+//         myForm.querySelector('input[name=content]').value = ''
 //         console.log(object)
 //       })
 //     }

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e65bc98e-33ed-4a70-84a4-e6137d6fddfc" name="默认更改列表" comment="">
-      <change beforePath="$PROJECT_DIR$/myResume.html" beforeDir="false" afterPath="$PROJECT_DIR$/myResume.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/message1.js" beforeDir="false" afterPath="$PROJECT_DIR$/message1.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -26,11 +26,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="myResume.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="myResume.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myResume.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="477">
-              <caret line="571" column="7" lean-forward="true" selection-start-line="571" selection-start-column="7" selection-end-line="571" selection-end-column="7" />
+            <state relative-caret-position="305">
+              <caret line="299" lean-forward="true" selection-start-line="299" selection-end-line="299" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -47,8 +47,8 @@
       <file leaf-file-name="message1.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/message1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
-              <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+            <state relative-caret-position="84">
+              <caret line="38" column="2" lean-forward="true" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -62,11 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="555" column="17" lean-forward="true" selection-start-line="555" selection-start-column="17" selection-end-line="555" selection-end-column="17" />
+            <state relative-caret-position="365">
+              <caret line="482" column="19" selection-start-line="482" selection-start-column="19" selection-end-line="482" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -87,6 +87,7 @@
       <find>transition</find>
       <find>xuanFuCeng</find>
       <find>transition: all .8s;</find>
+      <find>swiper-button-prev</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -96,10 +97,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/test/云数据库leancloud.html" />
-        <option value="$PROJECT_DIR$/message1.js" />
         <option value="$PROJECT_DIR$/message.js" />
-        <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/myResume.html" />
+        <option value="$PROJECT_DIR$/message1.js" />
+        <option value="$PROJECT_DIR$/style.css" />
       </list>
     </option>
   </component>
@@ -116,11 +117,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="NodePackageJsonFileManager">
-    <packageJsonPaths>
-      <path value="$PROJECT_DIR$/node_modules/dom7/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/ssr-window/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/swiper/package.json" />
-    </packageJsonPaths>
+    <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-70" />
@@ -199,12 +196,12 @@
       <workItem from="1542612711035" duration="13950000" />
       <workItem from="1542707072706" duration="3876000" />
       <workItem from="1542736415738" duration="23000" />
-      <workItem from="1542736571896" duration="19489000" />
+      <workItem from="1542736571896" duration="22068000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37338000" />
+    <option name="totallyTimeSpent" value="39917000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -350,13 +347,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="555" column="17" lean-forward="true" selection-start-line="555" selection-start-column="17" selection-end-line="555" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/message.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="514">
@@ -366,15 +356,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/message1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        <state relative-caret-position="84">
+          <caret line="38" column="2" lean-forward="true" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/myResume.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="571" column="7" lean-forward="true" selection-start-line="571" selection-start-column="7" selection-end-line="571" selection-end-column="7" />
+        <state relative-caret-position="305">
+          <caret line="299" lean-forward="true" selection-start-line="299" selection-end-line="299" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -384,6 +374,13 @@
             <element signature="n#style#0;n#svg#0;n#div#2;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#form#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="482" column="19" selection-start-line="482" selection-start-column="19" selection-end-line="482" selection-end-column="19" />
         </state>
       </provider>
     </entry>
